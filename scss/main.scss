@@ -1,0 +1,119 @@
+@import "extensions";
+@import "_variables";
+
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    //font-family: 'Parisienne', cursive;
+}
+
+header{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+
+    //animation
+    transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1);
+
+    nav{   
+        //nav 
+        position: absolute;
+        z-index: 1;
+        height: 110px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        left: 0;
+        top: 0;
+        //logo 
+        #nav_logo{
+            width: 280px;
+            height: 60%;
+            margin-top: 40px;
+            margin-left: 120px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                //object position 100% (left) 0 (top)
+            }
+
+        }
+        //buttons
+        #nav_buttons_container{
+            width: 600px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 120px;
+            a{
+                width: 100px;
+                height: 40px;
+
+                color: white;
+                text-decoration: none;
+                letter-spacing: 0.7px;
+                font-size: 1.2rem;
+                font-weight: 400;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            a:hover{
+                border-bottom: solid rgba(255, 255, 255,0.5) 3px;
+                margin-top: 3px;
+            }
+        }
+    }
+    //img container
+    .slide_container{
+        position: absolute;
+        width: 100%;
+        height: 100%; 
+        transition: all 1s ease-in-out;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    //arrows
+    .arrow{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .arrow:hover{
+        background-color: rgba(255, 255, 255,0.1);
+    }
+
+    #arrow_left{
+        left: 100px;
+        @extend %arrows;
+        color: $brown_color;
+    }
+
+    #arrow_right{
+        right: 100px;
+        @extend %arrows;
+        color: $brown_color;
+    }
+}
+
+main{
+    height: 1000px;
+    background-color: orange;
+}
