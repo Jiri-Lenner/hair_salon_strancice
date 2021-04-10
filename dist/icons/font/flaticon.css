@@ -1,10 +1,10 @@
 @font-face {
     font-family: "flaticon";
-    src: url("./flaticon.ttf?6b050dfbddb2c3598cdbc6233cb8fc1e") format("truetype"),
-url("./flaticon.woff?6b050dfbddb2c3598cdbc6233cb8fc1e") format("woff"),
-url("./flaticon.woff2?6b050dfbddb2c3598cdbc6233cb8fc1e") format("woff2"),
-url("./flaticon.eot?6b050dfbddb2c3598cdbc6233cb8fc1e#iefix") format("embedded-opentype"),
-url("./flaticon.svg?6b050dfbddb2c3598cdbc6233cb8fc1e#flaticon") format("svg");
+    src: url("./flaticon.ttf?aa6995fbadb9bc17e299d7692e6fb794") format("truetype"),
+url("./flaticon.woff?aa6995fbadb9bc17e299d7692e6fb794") format("woff"),
+url("./flaticon.woff2?aa6995fbadb9bc17e299d7692e6fb794") format("woff2"),
+url("./flaticon.eot?aa6995fbadb9bc17e299d7692e6fb794#iefix") format("embedded-opentype"),
+url("./flaticon.svg?aa6995fbadb9bc17e299d7692e6fb794#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -24,6 +24,9 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 .flaticon-pedicure:before {
     content: "\f102";
 }
-.flaticon-scissors:before {
+.flaticon-salon:before {
     content: "\f103";
+}
+.flaticon-scissors:before {
+    content: "\f104";
 }

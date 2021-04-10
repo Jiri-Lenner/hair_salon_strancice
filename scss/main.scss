@@ -260,7 +260,6 @@ main{
             margin-left: -100px;
             font-size: 4rem;
             text-align: center;
-
             font-family: 'Parisienne', cursive;
             color: $brown_color;
         }
@@ -297,28 +296,139 @@ main{
     article:nth-child(2){
         
         width: 100%;
-        height: 1000px;
+        height: 1200px;
         z-index: 1;
         position: relative;
 
         section:first-child{
             width: 100%;
-            height: 50%;
+            height: 60%;
             background-color: $brown_color;
             position: absolute;
             top: 0;
             z-index: 1;
             box-shadow: 0px 0px 20px 5px rgba(0,0,0,1);
+            display: flex;
 
+            #left_aboutUs{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                #innerContainer{
+                    width: 80%;
+                    height: 80%;
+                    position: relative;
+                    #outerContainer{
+                        width: 90%;
+                        height: 90%;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        background-color: $ligher_black;
+                        
+                    }
+                    #movedContainer{
+                        width: 90%;
+                        height: 90%;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        background-image: url("http://www.salonstrancice.cz/images/c.jpg?crc=3789886599");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        box-sizing: border-box;
+                        #border{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            box-sizing: border-box;
+                            border: solid 20px rgba(21, 20, 20, 0.7);
+                        }
+                        #content{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            box-sizing: border-box;
+                            background-color: rgba(21, 20, 20, 0.5);
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            #timeTop{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-evenly;
+                                align-items: center;
+                                i{
+                                    font-size: 5rem;
+                                    color: $brown_color;
+                                }
+                                h1{ 
+                                    font-size: 3.5rem;
+                                    font-family: 'Parisienne', cursive;
+                                    color: whitesmoke;
+                                }
+                            }
+
+                            p{
+                                font-size: 1.7rem;
+                                color: white;
+                                letter-spacing: 1px;
+                                font-weight: 300;
+                            }
+
+                            
+                        }
+                    }
+                }
+
+            }
+
+            #right_aboutUs{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+
+                box-sizing: border-box;
+                padding: 50px;
+                
+                h1{
+                    font-size: 5rem;
+                    font-family: 'Parisienne', cursive;
+                }
+
+
+                i{
+                    font-size: 5rem;
+                }
+
+                p{  
+                    width: 80%;
+                    line-height: 35px;
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+
+            }
         }
         section:last-child{
             background-color: $ligher_black;
             width: 100%;
-            height: 50%;
+            height: 40%;
             position: absolute;
             bottom: 0;
         }
-
     }
 }
 

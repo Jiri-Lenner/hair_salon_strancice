@@ -64,7 +64,7 @@ main article:first-child #cardContainer #scissors .expBot a, main article:first-
   text-decoration: none;
   border-radius: 2px;
   color: #151414;
-  background-color: #BE9F68;
+  background-color: #be9f68;
   font-weight: 600;
   letter-spacing: 0.5px;
   word-spacing: 1px;
@@ -83,7 +83,7 @@ main article:first-child #cardContainer #scissors .expBot a:hover, main article:
 }
 
 main article:first-child #cardContainer #scissors .expTopLight, main article:first-child #cardContainer #maskGel .expTopLight, main article:first-child #cardContainer #nails .expTopLight {
-  background-color: #BE9F68;
+  background-color: #be9f68;
   color: #0e0e0e;
 }
 
@@ -230,7 +230,7 @@ header .slide_container .slide_text {
 header .slide_container .slide_text h2 {
   font-family: 'Parisienne', cursive;
   font-size: 3.5em;
-  color: #BE9F68;
+  color: #be9f68;
   transform: translateX(-520px);
   visibility: hidden;
   opacity: 0;
@@ -263,7 +263,7 @@ header .slide_container .slide_text a {
   margin-top: 10px;
   width: 30%;
   height: 15%;
-  background-color: #BE9F68;
+  background-color: #be9f68;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -306,13 +306,13 @@ header .arrow:hover {
 
 header #arrow_left {
   left: 100px;
-  color: #BE9F68;
+  color: #be9f68;
   transition: 200ms background ease-in;
 }
 
 header #arrow_right {
   right: 100px;
-  color: #BE9F68;
+  color: #be9f68;
   transition: 200ms background ease-in;
 }
 
@@ -341,7 +341,7 @@ main article:first-child .title {
   font-size: 4rem;
   text-align: center;
   font-family: 'Parisienne', cursive;
-  color: #BE9F68;
+  color: #be9f68;
 }
 
 main article:first-child #cardContainer {
@@ -371,25 +371,138 @@ main article:first-child #cardContainer .expandable:hover {
 
 main article:nth-child(2) {
   width: 100%;
-  height: 1000px;
+  height: 1200px;
   z-index: 1;
   position: relative;
 }
 
 main article:nth-child(2) section:first-child {
   width: 100%;
-  height: 50%;
-  background-color: #BE9F68;
+  height: 60%;
+  background-color: #be9f68;
   position: absolute;
   top: 0;
   z-index: 1;
   box-shadow: 0px 0px 20px 5px black;
+  display: flex;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer {
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #outerContainer {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #151414;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("http://www.salonstrancice.cz/images/c.jpg?crc=3789886599");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: solid 20px rgba(21, 20, 20, 0.7);
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: rgba(21, 20, 20, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #content #timeTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #content #timeTop i {
+  font-size: 5rem;
+  color: #be9f68;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #content #timeTop h1 {
+  font-size: 3.5rem;
+  font-family: 'Parisienne', cursive;
+  color: whitesmoke;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #content p {
+  font-size: 1.7rem;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+main article:nth-child(2) section:first-child #right_aboutUs {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+main article:nth-child(2) section:first-child #right_aboutUs h1 {
+  font-size: 5rem;
+  font-family: 'Parisienne', cursive;
+}
+
+main article:nth-child(2) section:first-child #right_aboutUs i {
+  font-size: 5rem;
+}
+
+main article:nth-child(2) section:first-child #right_aboutUs p {
+  width: 80%;
+  line-height: 35px;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 main article:nth-child(2) section:last-child {
   background-color: #151414;
   width: 100%;
-  height: 50%;
+  height: 40%;
   position: absolute;
   bottom: 0;
 }
