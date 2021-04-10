@@ -349,6 +349,7 @@ main{
                             height: 100%;
                             box-sizing: border-box;
                             border: solid 20px rgba(21, 20, 20, 0.7);
+                            transition: border 300ms ease-out;
                         }
                         #content{
                             position: absolute;
@@ -358,6 +359,7 @@ main{
                             height: 100%;
                             box-sizing: border-box;
                             background-color: rgba(21, 20, 20, 0.5);
+                            transition: background 300ms ease-out;
                             display: flex;
                             flex-direction: column;
                             justify-content: space-evenly;
@@ -384,8 +386,17 @@ main{
                                 letter-spacing: 1px;
                                 font-weight: 300;
                             }
+                        }
+                        
+                    }
+                    #movedContainer:hover{
+                        cursor: pointer;
+                        #border{
+                            border: solid 20px rgba(21, 20, 20, 0.4);
+                        }
 
-                            
+                        #content{
+                            background-color: rgba(21, 20, 20, 0.8);
                         }
                     }
                 }
@@ -407,7 +418,6 @@ main{
                     font-size: 5rem;
                     font-family: 'Parisienne', cursive;
                 }
-
 
                 i{
                     font-size: 5rem;

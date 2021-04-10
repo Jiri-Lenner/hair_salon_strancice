@@ -431,6 +431,7 @@ main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #mov
   height: 100%;
   box-sizing: border-box;
   border: solid 20px rgba(21, 20, 20, 0.7);
+  transition: border 300ms ease-out;
 }
 
 main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #content {
@@ -441,6 +442,7 @@ main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #mov
   height: 100%;
   box-sizing: border-box;
   background-color: rgba(21, 20, 20, 0.5);
+  transition: background 300ms ease-out;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -470,6 +472,18 @@ main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #mov
   color: white;
   letter-spacing: 1px;
   font-weight: 300;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer:hover {
+  cursor: pointer;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer:hover #border {
+  border: solid 20px rgba(21, 20, 20, 0.4);
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer:hover #content {
+  background-color: rgba(21, 20, 20, 0.8);
 }
 
 main article:nth-child(2) section:first-child #right_aboutUs {
