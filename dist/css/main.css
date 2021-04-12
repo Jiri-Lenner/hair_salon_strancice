@@ -410,7 +410,7 @@ main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #out
   background-color: #151414;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer {
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movedContainer {
   width: 90%;
   height: 90%;
   position: absolute;
@@ -423,7 +423,7 @@ main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #mov
   box-sizing: border-box;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #border {
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movedContainer #border {
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -435,38 +435,38 @@ main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #mov
   transition: border 300ms ease-out;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #border div {
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movedContainer #border div {
   z-index: 1;
   background-color: white;
   position: absolute;
-  transition: top 300ms ease-out, bottom 300ms ease-out, left 300ms ease-out, right 300ms ease-out;
+  transition: top 500ms ease-out, bottom 500ms ease-out, left 500ms ease-out, right 500ms ease-out;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #border #leftLine {
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movedContainer #border .leftLine {
   height: 100%;
   left: -2px;
   width: 2px;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #border #rightLine {
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movedContainer #border .rightLine {
   height: 100%;
   right: -2px;
   width: 2px;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #border #topLine {
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movedContainer #border .topLine {
   top: -2px;
   height: 2px;
   width: 100%;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #border #botLine {
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movedContainer #border .botLine {
   bottom: -2px;
   height: 2px;
   width: 100%;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #content {
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movedContainer #content {
   overflow: hidden;
   position: absolute;
   text-decoration: none;
@@ -483,57 +483,126 @@ main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #mov
   align-items: center;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #content #timeTop {
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movedContainer #content #timeTop {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #content #timeTop i {
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movedContainer #content #timeTop i {
   font-size: 5rem;
   color: #be9f68;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #content #timeTop h1 {
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movedContainer #content #timeTop h1 {
   font-size: 3.5rem;
   font-family: 'Parisienne', cursive;
   color: whitesmoke;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer #content p {
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movedContainer #content p {
   font-size: 1.7rem;
   color: white;
   letter-spacing: 1px;
   font-weight: 300;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer:hover {
-  cursor: pointer;
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movigLines {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("http://www.salonstrancice.cz/images/c.jpg?crc=3789886599");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer:hover #border {
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movigLines #border {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
   border: solid 20px rgba(21, 20, 20, 0.4);
+  transition: border 300ms ease-out;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer:hover #border #leftLine {
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movigLines #border div {
+  z-index: 1;
+  background-color: white;
+  position: absolute;
+  transition: top 500ms ease-out, bottom 500ms ease-out, left 500ms ease-out, right 500ms ease-out;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movigLines #border .leftLine {
+  height: 100%;
   left: 40px;
+  width: 2px;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer:hover #border #rightLine {
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movigLines #border .rightLine {
+  height: 100%;
   right: 40px;
+  width: 2px;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer:hover #border #topLine {
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movigLines #border .topLine {
   top: 40px;
+  height: 2px;
+  width: 100%;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer:hover #border #botLine {
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movigLines #border .botLine {
   bottom: 40px;
+  height: 2px;
+  width: 100%;
 }
 
-main article:nth-child(2) section:first-child #left_aboutUs #innerContainer #movedContainer:hover #content {
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movigLines #content {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
   background-color: rgba(21, 20, 20, 0.8);
+  transition: background 300ms ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movigLines #content #timeTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movigLines #content #timeTop i {
+  font-size: 5rem;
+  color: #be9f68;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movigLines #content #timeTop h1 {
+  font-size: 3.5rem;
+  font-family: 'Parisienne', cursive;
+  color: whitesmoke;
+}
+
+main article:nth-child(2) section:first-child #left_aboutUs #innerContainer .movigLines #content p {
+  font-size: 1.7rem;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 300;
 }
 
 main article:nth-child(2) section:first-child #right_aboutUs {
@@ -569,6 +638,117 @@ main article:nth-child(2) section:last-child {
   height: 40%;
   position: absolute;
   bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+main article:nth-child(2) section:last-child #mapText {
+  width: 50%;
+  height: 100%;
+  font-size: 4rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  line-height: 70px;
+}
+
+main article:nth-child(2) section:last-child #mapText i {
+  font-size: 10rem;
+}
+
+main article:nth-child(2) section:last-child #mapText span {
+  color: #be9f68;
+}
+
+main article:nth-child(2) section:last-child #map {
+  background-image: url("../img/mapimg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+main article:nth-child(2) section:last-child #map #mapCover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.7);
+  transition: background 300ms ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main article:nth-child(2) section:last-child #map #mapCover div {
+  width: 50%;
+  height: 30%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-left: 120px;
+}
+
+main article:nth-child(2) section:last-child #map #mapCover div h1 {
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+main article:nth-child(2) section:last-child #map #mapCover div i {
+  position: absolute;
+  left: -50px;
+  top: 25px;
+  font-size: 1.7rem;
+  color: #be9f68;
+}
+
+main article:nth-child(2) section:last-child #map #mapCover div p {
+  font-size: 1.2rem;
+  color: #707070;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 25px;
+}
+
+main article:nth-child(2) section:last-child #map #leftTop {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  opacity: 0;
+  border-left: 2px white solid;
+  border-top: 2px white solid;
+  transition: top 500ms ease-out, left 500ms ease-out, opacity 400ms ease-out;
+}
+
+main article:nth-child(2) section:last-child #map #rightBot {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  opacity: 0;
+  border-bottom: 2px white solid;
+  border-right: 2px white solid;
+  transition: bottom 500ms ease-out, right 500ms ease-out, opacity 400ms ease-out;
+}
+
+main article:nth-child(2) section:last-child #map:hover #leftTop {
+  opacity: 1;
+  left: 130px;
+  top: 130px;
+}
+
+main article:nth-child(2) section:last-child #map:hover #rightBot {
+  opacity: 1;
+  bottom: 130px;
+  right: 130px;
 }
 
 footer {

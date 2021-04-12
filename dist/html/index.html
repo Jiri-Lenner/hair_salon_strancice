@@ -152,14 +152,14 @@
                 <div id="left_aboutUs">
                     <div id="innerContainer">
                         <div id="outerContainer"></div>
-                        <div id="movedContainer">
+                        <div class="movedContainer" id="openContainer">
                             <div id="border">
-                                <div id="leftLine"></div>
-                                <div id="rightLine"></div>
-                                <div id="topLine"></div>
-                                <div id="botLine"></div>
+                                <div class="styleLine leftLine"></div>
+                                <div class="styleLine rightLine"></div>
+                                <div class="styleLine topLine"></div>
+                                <div class="styleLine botLine"></div>
                             </div>
-                            <a href="#" id="content">
+                            <div id="content">
                                 <div id="timeTop">
                                     <i class="flaticon-salon"></i>
                                     <h1>Otevírací Hodiny</h1>
@@ -167,13 +167,12 @@
                                 <p>
                                     Pondělí - Pátek
                                 </p>
-                            </a>
+                            </div>
                         </div>
                     </div>
 
                 </div>
                 <div id="right_aboutUs">
-                    <i class="flaticon-scissors"></i>
                     <h1>O Našem Salónu</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eius amet totam neque similique
                         tempore accusantium veritatis maiores cumque iure perspiciatis consequatur, culpa vero molestiae
@@ -183,7 +182,23 @@
                         beatae!</p>
                 </div>
             </section>
-            <section></section>
+            <section>
+                <div id="mapText">
+                    <h1>Kde <br> <span>nás najdete ?</span></h1>
+                </div>
+                <a href="https://www.google.com/maps/place/Centrum+kr%C3%A1sy+Stran%C4%8Dice/@49.9484142,14.6763914,17z/data=!3m1!4b1!4m5!3m4!1s0x470b88f8b3042d75:0xcb52e2b3badaa517!8m2!3d49.9484108!4d14.6785801"
+                    id="map">
+                    <div id="mapCover">
+                        <div>
+                            <h1>Umístění</h1>
+                            <p>Náměstí Emila Kolbena 460, 251 63 Strančice</p>
+                            <i class="flaticon-maps-and-flags"></i>
+                        </div>
+                    </div>
+                    <div id="leftTop"></div>
+                    <div id="rightBot"></div>
+                </a>
+            </section>
         </article>
     </main>
 
@@ -191,7 +206,6 @@
         <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
                 href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer>
-
     <script src="../js/main.js">
     </script>
 </body>

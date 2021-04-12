@@ -5,6 +5,8 @@ let currentImage = 0;
 //navbar
 window.addEventListener("scroll", function () {
     let navbar = document.getElementById("navbar");
+    let openHour = document.getElementById("openContainer");
+
     //navbar.classList.toggle("sticky", window.crollY > 0);
     if (window.scrollY > 0) {
         navbar.classList.add("sticky")
@@ -14,6 +16,19 @@ window.addEventListener("scroll", function () {
     else {
         navbar.classList.remove("sticky")
     }
+
+    if (window.scrollY > window.innerHeight + 400) {
+        openHour.classList.remove("movedContainer")
+        openHour.classList.add("movigLines")
+        console.log(openHour)
+    }
+
+    if (window.scrollY < window.innerHeight + 400) {
+        openHour.classList.add("movedContainer")
+        openHour.classList.remove("movigLines")
+        console.log(openHour)
+    }
+
 })
 
 //buttons
@@ -56,7 +71,6 @@ let textAnimate = function () {
             for (let element of item.getElementsByClassName("frontInnerElement")) {
                 setTimeout(function () {
                     animation(element);
-                    console.log(element);
                 }, timer)
                 timer += 100
             }
@@ -107,6 +121,3 @@ for (let element of document.getElementsByClassName("expandable")) {
         e.target.querySelector(".expBot").classList.toggle("expBotLight");
     })
 }
-
-
-
