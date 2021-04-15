@@ -23,7 +23,7 @@
         <!--Nav => absolutly positioned-->
         <nav id="navbar">
             <a href="" id="nav_logo">
-                <img src="../img/nav_logo.png" alt="">
+                <img src="../img/nav_logo.png" alt="Logo">
             </a>
 
             <div id="nav_buttons_container">
@@ -164,13 +164,23 @@
                                     <i class="flaticon-salon"></i>
                                     <h1>Otevírací Hodiny</h1>
                                 </div>
-                                <p>
-                                    Pondělí - Pátek
-                                </p>
+                                <div id="time">
+                                    <div>
+                                        <p>
+                                            od 9
+                                        </p>
+                                        <i class="fas fa-arrow-right"></i>
+                                        <p>
+                                            do 18
+                                        </p>
+                                    </div>
+                                    <p>
+                                        Pondělí - Pátek
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div id="right_aboutUs">
                     <h1>O Našem Salónu</h1>
@@ -201,13 +211,58 @@
             </section>
         </article>
     </main>
-
     <footer>
-        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
-                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div id="footerContainer">
+            <ul id="footerText">
+                <!--List 1-->
+                <li>
+                    <img src="../img/nav_logo.png" alt="Logo">
+                </li>
+                <li id="links">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                    <a
+                        href="https://www.google.com/maps/place/Centrum+kr%C3%A1sy+Stran%C4%8Dice/@49.9484142,14.6763914,17z/data=!3m1!4b1!4m5!3m4!1s0x470b88f8b3042d75:0xcb52e2b3badaa517!8m2!3d49.9484108!4d14.6785801"><i
+                            class="fas fa-map-marker-alt"></i></a>
+                    <a href="tel:x-x-x"><i class="fas fa-phone-alt"></i></a>
+                </li>
+            </ul>
+            <!--List 2-->
+            <ul id="contactText">
+                <li>
+                    <p>Kontakty</p>
+                    <div class="contact">
+                        <i class="far fa-paper-plane"></i>
+                        <p class="head">mail: <a href="mailto: ">kadeřnictví MAIL</a></p>
+                    </div>
+                    <div class="contact">
+                        <i class="fas fa-phone-alt"></i>
+                        <p class="head">tel: <a href="tel:x-x-x">666-666-666</a></p>
+                    </div>
+                </li>
+            </ul>
+            <ul id="products">
+                <!--List 3-->
+                <div id="upperImages">
+                    <img class="imgSize" src="../img/belter.png" alt="">
+                    <img class="imgSize" src="../img/dusy.png" alt="">
+                    <img class="imgSize" src="../img/goldwell.png" alt="">
+                </div>
+                <div id="lowerImages">
+                    <img class="imgSize" src="../img/loreal.png" alt="">
+                    <img class="imgSize" src="../img/matrix.png" alt="">
+                </div>
+            </ul>
+        </div>
     </footer>
     <script src="../js/main.js">
     </script>
+    <div id="creator">
+        <div id="icons">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <p>© 2021 Assets by Václav Mareš</p>
+        <p>© 2021 Designed by Jiří Lenner Junior</p>
+    </div>
 </body>
 
 </html>

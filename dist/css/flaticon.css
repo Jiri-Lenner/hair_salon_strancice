@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "flaticon";
-  src: url("./flaticon.ttf?aa6995fbadb9bc17e299d7692e6fb794") format("truetype"), url("./flaticon.woff?aa6995fbadb9bc17e299d7692e6fb794") format("woff"), url("./flaticon.woff2?aa6995fbadb9bc17e299d7692e6fb794") format("woff2"), url("./flaticon.eot?aa6995fbadb9bc17e299d7692e6fb794#iefix") format("embedded-opentype"), url("./flaticon.svg?aa6995fbadb9bc17e299d7692e6fb794#flaticon") format("svg");
+  src: url("./flaticon.ttf?67bc1c06eb30754e71edd9a2714e8459") format("truetype"), url("./flaticon.woff?67bc1c06eb30754e71edd9a2714e8459") format("woff"), url("./flaticon.woff2?67bc1c06eb30754e71edd9a2714e8459") format("woff2"), url("./flaticon.eot?67bc1c06eb30754e71edd9a2714e8459#iefix") format("embedded-opentype"), url("./flaticon.svg?67bc1c06eb30754e71edd9a2714e8459#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -19,14 +19,22 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
   content: "";
 }
 
-.flaticon-pedicure:before {
+.flaticon-map:before {
   content: "";
 }
 
-.flaticon-salon:before {
+.flaticon-maps-and-flags:before {
   content: "";
 }
 
-.flaticon-scissors:before {
+.flaticon-pedicure:before {
   content: "";
+}
+
+.flaticon-salon:before {
+  content: "";
+}
+
+.flaticon-scissors:before {
+  content: "";
 }
