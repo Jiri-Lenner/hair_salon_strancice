@@ -8,7 +8,9 @@ html{
 body{
     background-color: black;
     font-family: 'Roboto', sans-serif;
-    min-width: 400px;   
+    min-width: 550px;   
+    min-height: 3000px;
+    
 }
 
 #anchorPointTop{
@@ -22,6 +24,7 @@ body{
 
 header{
     height: 100vh;
+    min-height: 600px;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -54,7 +57,7 @@ header{
 
             img{
                 width: 100%;
-                height: 100%;
+                height: 100%;   
                 object-fit: contain;
             }
 
@@ -590,7 +593,7 @@ main{
 
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: space-between;
 
             
             #scissors{
@@ -626,6 +629,7 @@ main{
            height: 1600px;
            
            #cardContainer{
+                justify-content: space-evenly;
                 flex-direction: column; 
                 position: relative;
            }
@@ -636,12 +640,15 @@ main{
            height: 2500px;
            
            #cardContainer{
+                justify-content: space-evenly;
                 flex-direction: column; 
                 position: relative;
            }
         }
         
     }
+
+    
 
     article:nth-child(2){
         
@@ -650,9 +657,10 @@ main{
         z-index: 1;
         position: relative;
 
+       
         section:first-child{
             width: 100%;
-            height: 60%;
+            height: 720px;
             background-color: $brown_color;
             position: absolute;
             top: 0;
@@ -660,17 +668,41 @@ main{
             box-shadow: 0px 0px 20px 5px rgba(0,0,0,1);
             display: flex;
 
+            @media screen and (max-width: 1450px) and (min-width: 0px) {
+                &{
+                    align-items: center;
+                    flex-direction: column;
+                    height: 1400px;
+                }
+            }
+
             #left_aboutUs{
                 width: 50%;
-                height: 100%;
+                height: 720px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
-                #innerContainer{
+                @media screen and (max-width: 1450px) and (min-width: 0px) {
+                    order: 2;
                     width: 80%;
-                    height: 80%;
+                    height: 500px;
+                }
+            
+                #innerContainer{
+                    width: 520px;
+                    height: 520px;
                     position: relative;
+
+                    @media screen and (max-width: 900px) and (min-width: 601px) {
+                        height: 520px;
+                        width: 520px;
+                    }
+
+                    @media screen and (max-width: 600px) and (min-width: 0px) {
+                        height: 420px;
+                        width: 420px;
+                    }
 
                     #outerContainer{
                         width: 90%;
@@ -679,8 +711,8 @@ main{
                         bottom: 0;
                         right: 0;
                         background-color: $ligher_black;
-                        
                     }
+
                     .movedContainer{       
                         width: 90%;
                         height: 90%;
@@ -709,6 +741,7 @@ main{
                                 position: absolute;
                                 transition: top 500ms ease-out, bottom 500ms ease-out, left 500ms ease-out, right 500ms ease-out;
                             }
+
                             //40px move
                             .leftLine{
                                 height: 100%;
@@ -760,14 +793,24 @@ main{
                                 justify-content: space-evenly;
                                 align-items: center;
                                 i{
-                                    font-size: 5rem;
+                                    font-size: 4rem;
                                     color: $brown_color;
                                     margin-bottom: 10px;
+                                    @media screen and (max-width: 1450px) and (min-width: 0px){
+                                        font-size: 3.5rem;
+                                    }
+                                   
                                 }
+
                                 h1{ 
-                                    font-size: 3.5rem;
+                                    font-size: 3rem;
                                     font-family: 'Parisienne', cursive;
                                     color: whitesmoke;
+
+                                    @media screen and (max-width: 1450px) and (min-width: 0px){
+                                        font-size: 2.5rem;
+                                    }
+
                                 }
                             }
                             #time{
@@ -777,16 +820,30 @@ main{
                                 flex-direction: column;
                                 text-align: center;
                                 justify-content: space-evenly;
+
+                                @media screen and (max-width: 1450px) and (min-width: 0px){
+                                    margin-top: 20px;
+                                }
+
                                 div{
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
                                     margin-bottom: 20px;
 
+                                    @media screen and (max-width: 1450px) and (min-width: 0px){
+                                        margin-bottom: 10px;
+                                    }
+
                                     i{
                                         font-size: 2rem;
                                         margin: 0 20px;
                                         color: $brown_color;
+
+                                        @media screen and (max-width: 1450px) and (min-width: 0px){
+                                            font-size: 1.5rem;
+                                        }
+    
                                     }
                                 }
                                 p{
@@ -795,6 +852,11 @@ main{
                                     color: white;
                                     letter-spacing: 1px;
                                     font-weight: 300;
+
+                                    @media screen and (max-width: 1450px) and (min-width: 0px){
+                                        font-size: 1rem;
+                                    }
+
                                 }
                             }
                         }
@@ -833,24 +895,36 @@ main{
                                 height: 100%;
                                 left: 40px;
                                 width: 2px;
+                                @media screen and (max-width: 600px) and (min-width: 0px){
+                                    left: 20px;
+                                }
                             }
     
                             .rightLine{
                                 height: 100%;
                                 right: 40px;
                                 width: 2px;
+                                @media screen and (max-width: 600px) and (min-width: 0px){
+                                    right: 20px;
+                                }
                             }
                             
                             .topLine{
                                 top: 40px;
                                 height: 2px;
                                 width: 100%;
+                                @media screen and (max-width: 600px) and (min-width: 0px){
+                                    top: 20px;
+                                }
                             }
     
                             .botLine{
                                 bottom: 40px;
                                 height: 2px;
                                 width: 100%;
+                                @media screen and (max-width: 600px) and (min-width: 0px){
+                                    bottom: 20px;
+                                }
                             }
     
                         }
@@ -878,13 +952,31 @@ main{
                                 align-items: center;
                                 i{
                                     margin-bottom: 10px;
-                                    font-size: 5rem;
+                                    font-size: 4rem;
                                     color: $brown_color;
+                                    @media screen and (max-width: 1450px) and (min-width: 601px){
+                                        font-size: 3.5rem;
+                                    }
+
+                                    @media screen and (max-width: 600px) and (min-width: 0px){
+                                        font-size: 3rem;
+                                    }
+    
+
+
+
                                 }
                                 h1{ 
-                                    font-size: 3.5rem;
+                                    font-size: 3rem;
                                     font-family: 'Parisienne', cursive;
                                     color: whitesmoke;
+                                    @media screen and (max-width: 1450px) and (min-width: 601px){
+                                        font-size: 2.5rem;
+                                    }
+
+                                    @media screen and (max-width: 600px) and (min-width: 0px){
+                                        font-size: 2.2rem;
+                                    }
                                 }
                             }
                             #time{
@@ -894,6 +986,14 @@ main{
                                 flex-direction: column;
                                 text-align: center;
                                 justify-content: space-evenly;
+
+                                @media screen and (max-width: 1450px) and (min-width: 601px){
+                                    margin-top: 20px;
+                                }
+                                @media screen and (max-width: 600px) and (min-width: 0px){
+                                    margin-top: 0px;
+                                }
+
                                 div{
 
                                     display: flex;
@@ -901,10 +1001,28 @@ main{
                                     align-items: center;
                                     margin-bottom: 20px;
 
+                                    @media screen and (max-width: 1450px) and (min-width: 601px){
+                                        margin-bottom: 10px;
+                                    }
+
+                                    @media screen and (max-width: 600px) and (min-width: 0px){
+                                        margin-bottom: 0px;
+                                    }
+
                                     i{
                                         font-size: 2rem;
                                         margin: 0 20px;
                                         color: $brown_color;
+
+                                        @media screen and (max-width: 1450px) and (min-width: 601px){
+                                            font-size: 1.7rem;
+                                        }
+
+                                        @media screen and (max-width: 600px) and (min-width: 0px){
+                                            font-size: 1.2rem;
+                                            margin: 0px 10px;
+                                        }
+
                                     }
                                 }
                                 p{
@@ -913,6 +1031,14 @@ main{
                                     color: white;
                                     letter-spacing: 1px;
                                     font-weight: 300;
+
+                                    @media screen and (max-width: 1450px) and (min-width: 601px){
+                                        font-size: 1.3rem;
+                                    }
+                                    @media screen and (max-width: 600px) and (min-width: 0px){
+                                        font-size: 1.3rem;
+                                        margin: 0px 10px;
+                                    }
                                 }
                             }
                         }
@@ -922,7 +1048,7 @@ main{
 
             #right_aboutUs{
                 width: 50%;
-                height: 100%;
+                height: 600px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
@@ -930,10 +1056,38 @@ main{
 
                 box-sizing: border-box;
                 padding: 50px;
-                
+
+                @media screen and (max-width: 1450px) and (min-width: 1101px) {
+                    order: 1;
+                    width: 100%;
+                    padding: 40px;
+                    height: 750px;
+                }
+
+                @media screen and (max-width: 1100px) and (min-width: 701px) {
+                    order: 1;
+                    width: 100%;
+                    padding: 0px;
+                    height: 750px;
+                }
+
+                @media screen and (max-width: 700px) and (min-width: 0px) {
+                    order: 1;
+                    width: 100%;
+                    padding: 0px;
+                    height: 750px;
+                }
+
+
+
                 h1{
                     font-size: 5rem;
                     font-family: 'Parisienne', cursive;
+                    @media screen and (max-width: 1450px) and (min-width: 0px) {
+                        font-size: 4rem;
+                    }
+
+
                 }
 
                 i{
@@ -951,12 +1105,16 @@ main{
         section:last-child{
             background-color: $ligher_black;
             width: 100%;
-            height: 40%;
+            height: 480px;
             position: absolute;
             bottom: 0;
             display: flex;
-
             align-items: center;
+
+            @media screen and (max-width: 1200px) and (min-width: 0px) {
+                height: 960px;
+                flex-direction: column;
+            }
 
             #mapText{
                 width: 50%;
@@ -966,6 +1124,7 @@ main{
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                
                 i{
                     font-size: 10rem;
                 }
@@ -988,6 +1147,10 @@ main{
                 overflow: hidden;
                 text-decoration: none;
 
+                @media screen and (max-width: 1200px) and (min-width: 0px) {
+                    width: 100%;
+                }
+
                 #mapCover{
                     width: 100%;
                     height: 100%;
@@ -1009,6 +1172,7 @@ main{
                         h1{
                            font-size: 2rem; 
                            color: whitesmoke
+
                         }
 
                         i{
@@ -1069,6 +1233,18 @@ main{
             }
         }
     }
+
+    @media screen and (max-width: 1450px) and (min-width: 1201px) {
+        article:nth-child(2){
+            height: 1880px;
+        }
+    }
+    @media screen and (max-width: 1200px) and (min-width: 0px) {
+        article:nth-child(2){
+            height: 2360px;
+        }
+    }
+
 }
 
 footer{
