@@ -15,7 +15,7 @@ header #arrow_left, header #arrow_right {
 
 @media screen and (max-width: 500px) and (min-width: 320px) {
   header #arrow_left, header #arrow_right {
-    top: 90%;
+    top: 80%;
     margin-top: 0px;
   }
 }
