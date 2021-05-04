@@ -1563,6 +1563,7 @@ main article:nth-child(2) section:first-child #right_aboutUs {
   align-items: center;
   box-sizing: border-box;
   padding: 50px;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 1450px) and (min-width: 1101px) {
@@ -1571,6 +1572,7 @@ main article:nth-child(2) section:first-child #right_aboutUs {
     width: 100%;
     padding: 40px;
     height: 750px;
+    margin: 0px;
   }
 }
 
@@ -1580,6 +1582,7 @@ main article:nth-child(2) section:first-child #right_aboutUs {
     width: 100%;
     padding: 0px;
     height: 750px;
+    margin: 0px;
   }
 }
 
@@ -1589,6 +1592,7 @@ main article:nth-child(2) section:first-child #right_aboutUs {
     width: 100%;
     padding: 0px;
     height: 750px;
+    margin: 0px;
   }
 }
 
